@@ -45,6 +45,24 @@ $ make check
 ```
 
 
+### Running integration tests
+
+```bash
+# Set up the environment
+cp docker-compose.override.yml.dist docker-compose.override.yml
+cp .env.test.dist .env.test
+docker-compose up -d
+docker-compose run --rm errbit rake db:seed
+source .env.test
+
+# Run tests
+make test
+
+# Cleanup
+docker-compose down
+```
+
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
