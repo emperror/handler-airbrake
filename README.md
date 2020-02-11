@@ -3,7 +3,7 @@
 [![CircleCI](https://circleci.com/gh/emperror/handler-airbrake.svg?style=svg)](https://circleci.com/gh/emperror/handler-airbrake)
 [![Go Report Card](https://goreportcard.com/badge/handler.emperror.dev/airbrake?style=flat-square)](https://goreportcard.com/report/handler.emperror.dev/airbrake)
 [![GolangCI](https://golangci.com/badges/github.com/emperror/handler-airbrake.svg)](https://golangci.com/r/github.com/emperror/handler-airbrake)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/handler.emperror.dev/airbrake)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://pkg.go.dev/handler.emperror.dev/airbrake)
 
 **Error handler integration for [Airbrake](https://airbrake.com) / [Errbit](https://errbit.com/).**
 
