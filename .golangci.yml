@@ -1,8 +1,12 @@
-linters:
-    enable-all: true
-
 linters-settings:
     golint:
         min-confidence: 0.1
     goimports:
-        local-prefixes: handler.emperror.dev/airbrake
+        local-prefixes: emperror.dev/handler/airbrake
+
+linters:
+    enable-all: true
+    disable:
+        - funlen
+        - gomnd
+        - testpackage

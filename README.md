@@ -1,9 +1,11 @@
 # Airbrake / Errbit handler
 
-[![CircleCI](https://circleci.com/gh/emperror/handler-airbrake.svg?style=svg)](https://circleci.com/gh/emperror/handler-airbrake)
-[![Go Report Card](https://goreportcard.com/badge/handler.emperror.dev/airbrake?style=flat-square)](https://goreportcard.com/report/handler.emperror.dev/airbrake)
-[![GolangCI](https://golangci.com/badges/github.com/emperror/handler-airbrake.svg)](https://golangci.com/r/github.com/emperror/handler-airbrake)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://pkg.go.dev/handler.emperror.dev/airbrake)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/emperror/handler-airbrake/CI?style=flat-square)](https://github.com/emperror/handler-airbrake/actions?query=workflow%3ACI)
+[![Codecov](https://img.shields.io/codecov/c/github/emperror/handler-airbrake?style=flat-square)](https://codecov.io/gh/emperror/handler-airbrake)
+[![Go Report Card](https://goreportcard.com/badge/emperror.dev/handler/airbrake?style=flat-square)](https://goreportcard.com/report/emperror.dev/handler/airbrake)
+![Go Version](https://img.shields.io/badge/go%20version-%3E=1.12-61CFDD.svg?style=flat-square)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/mod/emperror.dev/handler/airbrake)
+
 
 **Error handler integration for [Airbrake](https://airbrake.com) / [Errbit](https://errbit.com/).**
 
@@ -11,7 +13,7 @@
 ## Installation
 
 ```bash
-go get handler.emperror.dev/airbrake
+go get emperror.dev/handler/airbrake
 ```
 
 
@@ -23,7 +25,7 @@ package main
 import (
 	"github.com/airbrake/gobrake"
 
-	"handler.emperror.dev/airbrake"
+	"emperror.dev/handler/airbrake"
 )
 
 func main() {

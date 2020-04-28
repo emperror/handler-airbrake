@@ -4,7 +4,7 @@ package airbrake_test
 import (
 	"github.com/airbrake/gobrake"
 
-	"handler.emperror.dev/airbrake"
+	"emperror.dev/handler/airbrake"
 )
 
 func ExampleNew() {
@@ -22,6 +22,7 @@ func ExampleNewFromNotifier() {
 	projectKey := "key"
 
 	notifier := gobrake.NewNotifier(projectID, projectKey)
+
 	handler := airbrake.NewFromNotifier(notifier)
 	defer handler.Close() // Make sure to close the handler to flush all error reporting in progress
 
@@ -43,6 +44,7 @@ func ExampleNewSyncFromNotifier() {
 	projectKey := "key"
 
 	notifier := gobrake.NewNotifier(projectID, projectKey)
+
 	handler := airbrake.NewSyncFromNotifier(notifier)
 	defer handler.Close()
 
